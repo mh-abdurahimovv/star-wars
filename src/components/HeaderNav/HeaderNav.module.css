@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-large);
+}
+
+.list a {
+    display: block;
+    margin: 0 10px;
+    padding: 7px 10px;
+    text-decoration: none; /* Убираем подчеркивание для всех ссылок внутри списка */
+    color: var(--color-white);
+    min-width: 70px;
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-small);
+    text-align: center;
+    font-weight: var(--font-bold);
+    font-family: var(--font-family-main);
+    text-shadow: var(--text-shadow-yellow);
+    transition: var( --transition);
+    
+
+    /* -webkit-text-stroke-color: var(--color-yellow);
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-fill-color: transparent; */
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+  }  
+  
+.list :global(a.active) {
+  border: 2px solid var( --color-violet);
+  color: var( --color-violet);
+  text-shadow: none;
+  
+}
